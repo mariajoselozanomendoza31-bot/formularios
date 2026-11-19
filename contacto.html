@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="10"></textarea>
+
+        <p>¿Qué turnos quieres?</p>
+        <label for="mañana">mañana</label>
+        <input type="radio" id="mañana" name="Turno" value="Mañana">
+
+
+
+        <label for="tarde">tarde</label>
+        <input type="radio" id="tarde" name="Turno" value="Tarde">
+
+        <label for="noche">noche</label>
+        <input type="radio" id="noche" name="Turno" value="Noche">
+
+        <label for="diseñoweb">Diseño Web</label>
+        <input type="checkbox" id="diseñoweb" name="opciones" value="diseñoweb">
+
+        <label for="programacion">Programacion</label>
+        <input type="checkbox" id="programacion" name="opciones" value="programacion">
+
+        <label for="basededatos">Base de datos</label>
+        <input type="checkbox" id="basededatos" name="opciones" value="basededatos">
+        <label for="redes">Redes</label>
+        <input type="checkbox" id="redes" name="opciones" value="redes">
+
+
+        <label for="pago">Metodo de pago:</label>
+        <select id="pago" name="pago">
+            <option value="tarjeta">Tarjeta</option>
+            <option value="paypal">PayPal</option>
+            <option value="transferencia">Transferencia</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
+
+
+
+        <label for="provincias">Provincias Andalucia</label>
+        <select id="provincias" name="provincias">
+            <option value="">Elige una provincia</option>
+            <option value="almeria">Almería</option>
+            <option value="cadiz">Cádiz</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="granada">Granada</option>
+            <option value="huelva">Huelva</option>
+            <option value="jaen">Jaén</option>
+            <option value="malaga">Málaga</option>
+            <option value="sevilla">Sevilla</option>
+        </select>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" >
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+             >
+
+
+        </fieldset>
+
+
+        <button type="submit">Enviar</button>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
+            <label for="fechadenacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechadenacimiento" name="fechadenacimiento">
+        </fieldset>
+
+
+        <fieldset>
+            <legend style="font-weight: bold;">Datos de contacto</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+            <label for="provincia">Provincias Andalucia</label>
+            <select id="provincias" name="provincias">
+                <option value="">Elige una provincia</option>
+                <option value="almeria">Almería</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="granada">Granada</option>
+                <option value="huelva">Huelva</option>
+                <option value="jaen">Jaén</option>
+                <option value="malaga">Málaga</option>
+                <option value="sevilla">Sevilla</option>
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Modalidad de formación</legend>
+            <label for="online">Online</label>
+            <input type="radio" id="online" name="modalidad" value="Online">
+
+            <label for="mixto">Mixto</label>
+            <input type="radio" id="mixto" name="modalidad" value="Mixto">
+
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="presencial" name="modalidad" value="Presencial">
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Intereses</legend>
+
+            <label for="programacion">Programacion</label>
+            <input type="checkbox" id="programacion" name="opciones" value="programacion">
+
+            <label for="basededatos">Base de datos</label>
+            <input type="checkbox" id="basededatos" name="opciones" value="basededatos">
+            <label for="redes">Redes</label>
+            <input type="checkbox" id="redes" name="opciones" value="redes">
+            <label for="web">Web</label>
+            <input type="checkbox" id="web" name="opciones" value="web">
+        </fieldset>
+        <fieldset>
+            <legend>Observaciones</legend>
+            
+            <textarea id="mensaje" name="mensaje" rows="10" cols="60"></textarea>
+
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
