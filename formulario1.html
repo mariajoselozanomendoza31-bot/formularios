@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
-        <form action="https://httpbin.org/post" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad">
-            <label for="ciudad">ciudad:</label>
-            <input type="text" id="ciudad" name="ciudad">
-            <button type="submit">Enviar</button>
-        </form>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+        <label for="ciudad">ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad">
+        <button type="submit">Enviar</button>
+    </form>
 
-            
-            
+    <form>
+        <label form="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre aquí">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="4" max="15">
 
-        
-            
+        <label form="usuario">Nombre de usuario:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre aquí">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="4" max="15">
 
-        
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <form action="https://httpbin.org/post" method="get">
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" value="Diseño web" readonly>
+        <label for="codigo">Codigo:</label>
+        <input type="text" id="codigo" name="codigo" value="DW001" disabled>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="https://httpbin.org/post" method="get">
+
+        <input type="radio" id="presencial" name="modalidad" value="presencial" checked>
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="online" name="modalidad" value="online">
+        <label for="online">Online</label>
+    </form>
+    <form>
+        <label for="Idiomas">Idiomas que conoces</label>
+        <select id="Idiomas" name="Idiomas" multiple size="1">
+            <option value="ingles">Ingles</option>
+            <option value="frances">Frances</option>
+            <option value="aleman">Aleman</option>
+            <option value="italiano">Italiano</option>
+
+        </select>
+    </form>
+
+    <form>
+        <label for="buscar">Buscar</label>
+        <input type="text" id="buscar" name="buscar" autofocus>
+    </form>
+
+
+<form>
+
+<form>
+<label for="codigo">Código de acceso</label>
+<input type="text"
+id="codigo"
+name="codigo"
+pattern="^[0-9]{4}"
+title="Introduce cuatro números"
+required>
+ <button type="submit">Enviar</button>
+
+
+
+</form>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
 </body>

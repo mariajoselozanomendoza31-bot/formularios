@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="get"></form>
+
+    <fieldset>
+        <legend style="font-weight: bold;">Datos de contacto</legend>
+        <label form="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" min="3" autofocus>
+        <label form="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" min="3">
+        <label form="correoelectronico">Correo Electronico:</label>
+        <input type="text" id="correoelectronico" name="correoelectronico" required
+            placeholder="Escriba su correo aquí">
+        <label form="telefono">Teléfono:</label>
+        <input type="tel">
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="4" max="15">
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend style="font-weight: bold;">Datos de reserva</legend>
+        <label for="tipohabitacion">Tipo de Habitación</label>
+        <select id="tipodehabitacion" name="tipodehabitacion">
+            <option value="">Individual</option>
+            <option value="almeria">Doble</option>
+            <option value="cadiz">Familiar</option>
+
+        </select>
+
+        <label form="fechallegada">Fecha llegada:</label>
+        <input type="date" id="fechallegada" name="fechallegada">
+
+
+
+        <label form="numerodehuespes">Número de Húesped:</label>
+        <input type="number" id="numerodehuespes" name="numerodehuespes" min="1" max="6">
+
+
+
+
+        <label form="regimendealojamiento">Régimen de Alojamiento:</label>
+        <label for="soloalojamiento">Sólo Alojamiento</label>
+        <input type="radio" id="Alojamiento" name="Alojamiento" value="Soloalejamiento" checked>
+
+        <label for="desayunoincluido">Desayuno Incluido</label>
+        <input type="radio" id="Alojamiento" name="Alojamiento" value="Soloalejamiento">
+        <label for="mediapension">Media Pensión</label>
+        <input type="radio" id="Alojamiento" name="Alojamiento" value="Soloalejamiento">
+    </fieldset>
+    <fieldset>
+        <legend style="font-weight: bold;">Servicios Adicionales</legend>
+
+        <label for="aparcamiento">Aparcamiento</label>
+        <input type="checkbox" id="aparcamiento" name="opciones" value="aparcamiento">
+
+        <label for="cuna">Cuna</label>
+        <input type="checkbox" id="cuna" name="opciones" value="cuna">
+        <label for="serviciosdelavanderia">Servicios de Lavandería</label>
+        <input type="checkbox" id="serviciosdelavanderia" name="opciones" value="serviciosdelavanderia">
+        <label for="visitaguiada">Visita Guiada</label>
+        <input type="checkbox" id="visitaguiada" name="opciones" value="visitaguiada">
+    </fieldset>
+    <fieldset>
+        <legend style="font-weight: bold;">Código Reserva</legend>
+        <label for="codigo">Codigo:</label>
+        <input type="text" id="codigo" name="codigo" value="W001" readonly>
+
+    </fieldset>
+    <fieldset>
+        <legend style="font-weight: bold;">Descuento Promocional</legend>
+        
+<input type="text" id="nodisponible" name="nodisponible" value="No disponible" disabled>
+
+        
+       </fieldset>
+       <fieldset>
+        <legend>Observaciones</legend>
+            
+            <textarea id="mensaje" name="mensaje" rows="10" cols="60"></textarea>
+
+        
+       </fieldset>
+       <button type="submit">Enviar</button>
+
+    
+</body>
+
+</html>
