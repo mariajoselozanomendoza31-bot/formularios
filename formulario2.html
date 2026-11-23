@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
+    <link rel="stylesheet" href="stylos.css">
 </head>
 
 <body>
@@ -12,40 +13,63 @@
 
     <fieldset>
         <legend style="font-weight: bold;">Datos de contacto</legend>
-        <label form="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" min="3" autofocus>
-        <label form="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" min="3">
-        <label form="correoelectronico">Correo Electronico:</label>
-        <input type="text" id="correoelectronico" name="correoelectronico" required
-            placeholder="Escriba su correo aquí">
-        <label form="telefono">Teléfono:</label>
-        <input type="tel">
-
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" name="edad" min="4" max="15">
+        <div class="fila">
+            <div class="campo">
+                <label form="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" min="3" autofocus>
+            </div>
+            <div class="campo">
 
 
-    </fieldset>
 
 
-    <fieldset>
+                <label form="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" min="3">
+
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="campo">
+                <label form="correoelectronico">Correo Electronico:</label>
+                <input type="email" id="correoelectronico" name="correoelectronico" required
+                    placeholder="Escriba su correo aquí">
+            </div>
+
+            <div class="campo">
+                <label form="telefono">Teléfono:</label>
+                <input type="tel">
+            </div>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="4" max="15">
+
+        </div>
+
+
+
+
         <legend style="font-weight: bold;">Datos de reserva</legend>
-        <label for="tipohabitacion">Tipo de Habitación</label>
-        <select id="tipodehabitacion" name="tipodehabitacion">
-            <option value="">Individual</option>
-            <option value="almeria">Doble</option>
-            <option value="cadiz">Familiar</option>
+        <div class="fila">
+            <div class="campo">
+                <label for="tipohabitacion">Tipo de Habitación</label>
+                <select id="tipodehabitacion" name="tipodehabitacion">
+                    <option value="">Individual</option>
+                    <option value="almeria">Doble</option>
+                    <option value="cadiz">Familiar</option>
 
-        </select>
+                </select>
+            </div>
+            <div class="campo">
+                <label form="numerodehuespes">Número de Húesped:</label>
+                <input type="number" id="numerodehuespes" name="numerodehuespes" min="1" max="6">
+            </div>
+        </div>
+        <div>
+            <label form="fechallegada">Fecha llegada:</label>
+            <input type="date" id="fechallegada" name="fechallegada">
+        </div>
 
-        <label form="fechallegada">Fecha llegada:</label>
-        <input type="date" id="fechallegada" name="fechallegada">
 
-
-
-        <label form="numerodehuespes">Número de Húesped:</label>
-        <input type="number" id="numerodehuespes" name="numerodehuespes" min="1" max="6">
 
 
 
@@ -80,21 +104,22 @@
     </fieldset>
     <fieldset>
         <legend style="font-weight: bold;">Descuento Promocional</legend>
-        
-<input type="text" id="nodisponible" name="nodisponible" value="No disponible" disabled>
 
-        
-       </fieldset>
-       <fieldset>
+        <input type="text" id="nodisponible" name="nodisponible" value="No disponible" disabled>
+
+
+    </fieldset>
+    <fieldset>
         <legend>Observaciones</legend>
-            
-            <textarea id="mensaje" name="mensaje" rows="10" cols="60"></textarea>
 
-        
-       </fieldset>
-       <button type="submit">Enviar</button>
+        <textarea id="mensaje" name="mensaje" rows="10" cols="60"></textarea>
 
-    
+
+    </fieldset>
+    <button type="submit" class=boton-enviar>Enviar</button>
+
+ <button type="submit" class=boton-borrar>Borrar</button>
+
 </body>
 
 </html>
